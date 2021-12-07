@@ -4,7 +4,11 @@ How to execute the code?
 
 Step 0: Please make sure that Java is installed in the system
 
-Step 1: Store the log file by the name "logfile.txt". Save it at a specific location in the user's PC
+Step 1: Store the log file by the name "logfile.txt". Save it at a specific location in the user's PC in the below format
+```
+{"id":"BMW", "state":"RUNNING", "type":"Sedan", "host":"12345", "timestamp":1491377495212}
+{"id":"Audi", "state":"STATIONARY", "timestamp":1491377495213}
+```
 
 Step 2: Perform "mvn clean install at the project location"
 
