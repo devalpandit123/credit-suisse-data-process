@@ -23,3 +23,14 @@ Output:
 Code is available in DataProcessService.java file at line 57
 4. To get the code coverage, please run the following command,
 
+```
+mvn jacoco:report
+```
+5. Now, go to project folder(where app is saved) in File Explorer and go to
+```
+{project}/target/site/jacoco/index.html
+```
+
+6. When you double-click the file, you will get an view of files covered by unit tests in the project.
+
+7. Enjoy!

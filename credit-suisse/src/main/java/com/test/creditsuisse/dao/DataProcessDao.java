@@ -3,9 +3,11 @@ package com.test.creditsuisse.dao;
 import com.test.creditsuisse.model.DataProcessEvent;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.springframework.stereotype.Component;
 
 import java.sql.*;
 
+@Component
 public class DataProcessDao {
     private static final Log logger = LogFactory.getLog(DataProcessDao.class);
 
@@ -59,7 +61,6 @@ public class DataProcessDao {
         ResultSet resultSet = connection.createStatement().executeQuery(getAll);
         logger.info("All entries: {}"+resultSet);
         while (resultSet.next()) {
-
             logger.info("Alert for EventID <"+ resultSet.getString(1) + ">"+" Event duration: " +
                     resultSet.getString(2) + " milliseconds" + " Type: "
                     + resultSet.getString(3) + " Host: "
